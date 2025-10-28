@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1761608729 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
+	<iostream>
+	"clsApp.h"
+
+1761607816 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
+
+1761608797 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsmenuprincipal.cpp
+
+1761608671 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\main.cpp
+	<iostream>
+	"clsApp.h"
+

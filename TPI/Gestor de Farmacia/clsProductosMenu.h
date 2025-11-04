@@ -1,20 +1,19 @@
 #pragma once
-#include "clsProductosMenu.h"
 
-class App
+class ProductosMenu
 {
 
-    public:
-    App();
-    void run();
+public:
+    ProductosMenu();
+    void mostrar();
 
-    protected:
+protected:
     void mostrarOpciones();
     int seleccionarOpcion();
     void ejecutarOpcion(int opcion);
 
-    ProductosMenu _productoMenu;
-    private:
+
+private:
     int _cantidadOpciones;
 
 };

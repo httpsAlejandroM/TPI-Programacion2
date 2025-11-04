@@ -32,6 +32,8 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="clsApp.cpp" />
+		<Unit filename="clsApp.h" />
 		<Unit filename="clsMenuPrincipal.cpp" />
 		<Unit filename="clsMenuPrincipal.h" />
 		<Unit filename="main.cpp" />

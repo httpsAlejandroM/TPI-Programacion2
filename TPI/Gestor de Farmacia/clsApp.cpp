@@ -17,7 +17,7 @@ void App::run(){
         ejecutarOpcion(opcion);
     } while (opcion != 0);
 }
-
+//TODO: Agregar cpp y .h de clases ProductosMenu, VentasMenu, ClientesMenu, OSocialesMenus, VendedoresMenu
 void App::mostrarOpciones(){
   cout << "--- MENU PRINCIPAL ---" << endl;
   cout << "1- PRODUCTOS "<<endl;
@@ -47,8 +47,7 @@ int App::seleccionarOpcion(){
 void App::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
-    cout << "MENU DE PRODUCTOS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu principal...");
+    _productoMenu.mostrar();
   break;
   case 2:
     cout << "MENU DE VENTAS" << endl;

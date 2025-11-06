@@ -34,8 +34,8 @@
 		</Compiler>
 		<Unit filename="clsApp.cpp" />
 		<Unit filename="clsApp.h" />
-		<Unit filename="clsMenuPrincipal.cpp" />
-		<Unit filename="clsMenuPrincipal.h" />
+		<Unit filename="clsProductosMenu.cpp" />
+		<Unit filename="clsProductosMenu.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

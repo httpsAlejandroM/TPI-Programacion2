@@ -1,4 +1,4 @@
-#include "Fecha.h"
+#include "clsFecha.h"
 using namespace std;
 
 Fecha::Fecha()

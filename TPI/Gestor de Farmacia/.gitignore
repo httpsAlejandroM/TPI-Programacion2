@@ -2,6 +2,8 @@
 *.o
 *.obj
 *.dll
+*.layout
+*.depend
 bin/
 obj/
 

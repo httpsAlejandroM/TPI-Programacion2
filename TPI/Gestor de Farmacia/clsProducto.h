@@ -8,9 +8,7 @@ public:
 Producto();
 Producto(int idProducto, const char* nombre, const char* marca, int stock, float precio, bool estado, int idCategoria, bool recetaObligatoria);
 
-
-
-void setIdProducto();
+void setIdProducto(int idProducto);
 int getIdProducto();
 
 void setNombre(const char* nombre);

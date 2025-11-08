@@ -32,6 +32,7 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="acercaDe.cpp" />
 		<Unit filename="clsApp.cpp" />
 		<Unit filename="clsApp.h" />
 		<Unit filename="clsCliente.h" />

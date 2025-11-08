@@ -69,10 +69,11 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1762632342 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
+1762635011 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
 	"clsVendedoresMenu.h"
 	"clsClientesMenu.h"
+	"clsCategoriasMenu.h"
 
 1762616166 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\main.cpp
 	<iostream>
@@ -92,9 +93,16 @@
 	"clsClientesMenu.h"
 	"rlutil.h"
 
-1762632719 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\acercade.cpp
+1762633285 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\acercade.cpp
 	<iostream>
 	<string>
 	"clsApp.h"
 	"rlutil.h"
+
+1762634185 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.cpp
+	<iostream>
+	"clsCategoriasMenu.h"
+	"rlutil.h"
+
+1762634323 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
 

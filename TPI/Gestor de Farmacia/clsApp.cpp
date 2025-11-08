@@ -54,9 +54,8 @@ void App::ejecutarOpcion(int opcion){
     rlutil::anykey("Presione una tecla para volver al menu principal...");
     break;
   case 3:
-    cout << "MENU DE CLIENTES" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu principal...");
-    break;
+    _clienteMenu.mostrar();
+  break;
   case 4:
    cout << "MENU DE OBRAS SOCIALES" << endl;
    rlutil::anykey("Presione una tecla para volver al menu principal...");

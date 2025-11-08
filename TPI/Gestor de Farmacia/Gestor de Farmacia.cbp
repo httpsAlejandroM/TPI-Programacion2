@@ -34,6 +34,9 @@
 		</Compiler>
 		<Unit filename="clsApp.cpp" />
 		<Unit filename="clsApp.h" />
+		<Unit filename="clsCliente.h" />
+		<Unit filename="clsClientesMenu.cpp" />
+		<Unit filename="clsClientesMenu.h" />
 		<Unit filename="clsFecha.cpp" />
 		<Unit filename="clsFecha.h" />
 		<Unit filename="clsProducto.h" />

@@ -1,6 +1,7 @@
 #pragma once
 #include "clsProductosMenu.h"
 #include "clsVendedoresMenu.h"
+#include "clsClientesMenu.h"
 
 
 class App
@@ -17,6 +18,7 @@ class App
 
     ProductosMenu _productoMenu;
     VendedoresMenu _vendedorMenu;
+    ClientesMenu _clienteMenu;
     private:
     int _cantidadOpciones;
 

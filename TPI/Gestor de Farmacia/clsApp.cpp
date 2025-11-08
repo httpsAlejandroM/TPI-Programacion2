@@ -4,7 +4,7 @@ using namespace std;
 #include "rlutil.h"
 
 App::App(){
-    _cantidadOpciones = 7;
+    _cantidadOpciones = 8;
 }
 
 void App::run(){
@@ -21,12 +21,13 @@ void App::run(){
 void App::mostrarOpciones(){
   cout << "--- MENU PRINCIPAL ---" <<endl<<endl;
   cout << "  1- PRODUCTOS "<<endl;
-  cout << "  2- VENTAS "<<endl;
+  cout << "  2- VENTAS "<<endl<<endl;
   cout << "  3- CLIENTES "<<endl;
-  cout << "  4- OBRAS SOCIALES "<<endl;
-  cout << "  5- VENDEDORES "<<endl<<endl;
-  cout << "  6- REPORTES "<<endl;
-  cout << "  7- Acerca de"<<endl;
+  cout << "  4- OBRAS SOCIALES "<<endl<<endl;
+  cout << "  5- CATEGORIAS "<<endl;
+  cout << "  6- VENDEDORES "<<endl<<endl;
+  cout << "  7- REPORTES "<<endl;
+  cout << "  8- Acerca de"<<endl;
   cout << "-----------------" << endl;
   cout << "  0- Salir "<<endl;
 }
@@ -63,13 +64,16 @@ void App::ejecutarOpcion(int opcion){
    rlutil::anykey("Presione una tecla para volver al menu principal...");
     break;
   case 5:
-    _vendedorMenu.mostrar();
+    _categoriaMenu.mostrar();
     break;
   case 6:
+    _vendedorMenu.mostrar();
+    break;
+  case 7:
    cout << "  REPORTES" << endl;
    rlutil::anykey("Presione una tecla para volver al menu principal...");
     break;
-  case 7:
+  case 8:
    cout << "  Acerca de" << endl;
    acercaDe();
     break;

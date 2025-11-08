@@ -1,13 +1,13 @@
 #include <iostream>
-#include "clsProductosMenu.h"
+#include "clsVendedoresMenu.h"
 #include "rlutil.h"
 using namespace std;
 
-ProductosMenu::ProductosMenu(){
-    _cantidadOpciones = 5;
+VendedoresMenu::VendedoresMenu(){
+  _cantidadOpciones = 5;
 }
 
-void ProductosMenu::mostrar(){
+void VendedoresMenu::mostrar(){
   int opcion;
 
   do{
@@ -18,19 +18,17 @@ void ProductosMenu::mostrar(){
   }while(opcion != 0);
 }
 
-void ProductosMenu::mostrarOpciones(){
-  cout << "--- MENU PRODUCTOS ---" << endl;
-  cout << "1- AGREGAR PRODUCTO "<<endl;
-  cout << "2- BORRAR PRODUCTO "<<endl;
-  cout << "3- MODIFICAR PRODUCTO "<<endl;
-  cout << "4- VER TODOS LOS PRODUCTOS "<<endl;
-  //TODO: AGREGAR OPCIONES DESPUES DE LISTAR PRODUCTOS PARA ORDENAR SEGUN: STOCK, PRECIO, CATEGORIA, NOMBRE
-  cout << "5- BUSCAR PRODUCTO POR NOMBRE/ID"<<endl;
-
+void VendedoresMenu::mostrarOpciones(){
+  cout << "--- MENU VENDEDORES ---" << endl;
+  cout << "1- AGREGAR VENDEDOR "<<endl;
+  cout << "2- BORRAR VENDEDOR "<<endl;
+  cout << "3- MODIFICAR VENDEDOR "<<endl;
+  cout << "4- VER TODOS LOS VENDEDORES "<<endl;
+  cout << "5- BUSCAR VENDEDOR POR DNI/ID"<<endl;
   cout << "0- Atras "<<endl;
 }
 
-int ProductosMenu::seleccionarOpcion(){
+int VendedoresMenu::seleccionarOpcion(){
   int opcion;
   mostrarOpciones();
   cout << "---------------" << endl;
@@ -45,31 +43,31 @@ int ProductosMenu::seleccionarOpcion(){
   return opcion;
 }
 
-void ProductosMenu::ejecutarOpcion(int opcion){
+void VendedoresMenu::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
-    cout << "AGREGAR PRODUCTOS" << endl;
+    cout << "AGREGAR VENDEDOR" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
-  break;
-  case 2:
-    cout << "BORRAR PRODUCTOS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu anterior...");
-  break;
-  case 3:
-    cout << "MODIFICAR PRODUCTOS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu anterior...");
-  break;
-  case 4:
-    cout << "VER PRODUCTOS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu anterior...");
-  break;
-  case 5:
-    cout << "BUSCAR PRODUCTOS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu anterior...");
-  break;
-  case 0:
-   cout << "Volviendo al menu anterior" << endl;
     break;
-
+  case 2:
+    cout << "BORRAR VENDEDOR" << endl;
+    rlutil::anykey("Presione una tecla para volver al menu anterior...");
+    break;
+  case 3:
+    cout << "MODIFICAR VENDEDOR" << endl;
+    rlutil::anykey("Presione una tecla para volver al menu anterior...");
+    break;
+  case 4:
+    cout << "VER VENDEDORES" << endl;
+    rlutil::anykey("Presione una tecla para volver al menu anterior...");
+    break;
+  case 5:
+    cout << "BUSCAR VENDEDOR" << endl;
+    rlutil::anykey("Presione una tecla para volver al menu anterior...");
+    break;
+  case 0:
+    cout << "Volviendo al menu anterior" << endl;
+    break;
   }
 }
+

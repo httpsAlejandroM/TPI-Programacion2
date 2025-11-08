@@ -2,8 +2,7 @@
 #include "clsApp.h"
 
 
-int main()
-{
+int main() {
     App app;
 
     app.run();

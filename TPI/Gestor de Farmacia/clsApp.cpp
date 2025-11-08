@@ -62,12 +62,11 @@ void App::ejecutarOpcion(int opcion){
    rlutil::anykey("Presione una tecla para volver al menu principal...");
     break;
   case 5:
-   cout << "MENU DE VENDEDORES" << endl;
-   rlutil::anykey("Presione una tecla para volver al menu principal...");
+    _vendedorMenu.mostrar();
     break;
 
   case 0:
-    cout << "Cerrando aplicacion... " << endl;
+    cout << "Cerrando aplicacion... \n\n\n";
     break;
   }
 }

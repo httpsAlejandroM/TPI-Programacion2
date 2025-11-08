@@ -3,6 +3,7 @@
 #include "clsVendedoresMenu.h"
 #include "clsClientesMenu.h"
 #include "clsCategoriasMenu.h"
+#include "clsObrasSocialesMenu.h"
 
 
 class App
@@ -22,6 +23,7 @@ class App
     VendedoresMenu _vendedorMenu;
     ClientesMenu _clienteMenu;
     CategoriasMenu _categoriaMenu;
+    ObrasSocialesMenu _obraSocialMenu;
 
     private:
     int _cantidadOpciones;

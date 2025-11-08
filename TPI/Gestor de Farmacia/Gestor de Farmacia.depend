@@ -69,11 +69,12 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1762635011 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
+1762637642 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
 	"clsVendedoresMenu.h"
 	"clsClientesMenu.h"
 	"clsCategoriasMenu.h"
+	"clsObrasSocialesMenu.h"
 
 1762616166 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\main.cpp
 	<iostream>
@@ -88,7 +89,7 @@
 
 1762630624 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.h
 
-1762630624 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.cpp
+1762637220 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.cpp
 	<iostream>
 	"clsClientesMenu.h"
 	"rlutil.h"
@@ -99,10 +100,17 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1762634185 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.cpp
+1762635364 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.cpp
 	<iostream>
 	"clsCategoriasMenu.h"
 	"rlutil.h"
 
-1762634323 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
+1762635364 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
+
+1762637547 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.h
+
+1762637511 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
+	<iostream>
+	"clsObrasSocialesMenu.h"
+	"rlutil.h"
 

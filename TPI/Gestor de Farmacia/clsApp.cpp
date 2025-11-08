@@ -60,8 +60,7 @@ void App::ejecutarOpcion(int opcion){
     _clienteMenu.mostrar();
   break;
   case 4:
-   cout << "  MENU DE OBRAS SOCIALES" << endl;
-   rlutil::anykey("Presione una tecla para volver al menu principal...");
+   _obraSocialMenu.mostrar();
     break;
   case 5:
     _categoriaMenu.mostrar();

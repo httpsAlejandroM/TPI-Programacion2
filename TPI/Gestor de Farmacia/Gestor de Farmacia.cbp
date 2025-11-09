@@ -32,26 +32,14 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="acercaDe.cpp" />
 		<Unit filename="clsApp.cpp" />
 		<Unit filename="clsApp.h" />
-		<Unit filename="clsCategoria.h" />
-		<Unit filename="clsCategoriasMenu.cpp" />
-		<Unit filename="clsCategoriasMenu.h" />
-		<Unit filename="clsCliente.h" />
-		<Unit filename="clsClientesMenu.cpp" />
-		<Unit filename="clsClientesMenu.h" />
 		<Unit filename="clsFecha.cpp" />
 		<Unit filename="clsFecha.h" />
-		<Unit filename="clsObraSocial.h" />
-		<Unit filename="clsObrasSocialesMenu.cpp" />
-		<Unit filename="clsObrasSocialesMenu.h" />
+		<Unit filename="clsProducto.cpp" />
 		<Unit filename="clsProducto.h" />
 		<Unit filename="clsProductosMenu.cpp" />
 		<Unit filename="clsProductosMenu.h" />
-		<Unit filename="clsVendedor.h" />
-		<Unit filename="clsVendedoresMenu.cpp" />
-		<Unit filename="clsVendedoresMenu.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />

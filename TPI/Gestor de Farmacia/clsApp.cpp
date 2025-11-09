@@ -53,8 +53,7 @@ void App::ejecutarOpcion(int opcion){
     _productoMenu.mostrar();
   break;
   case 2:
-    cout << "  MENU DE VENTAS" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu principal...");
+    _ventaMenu.mostrar();
     break;
   case 3:
     _clienteMenu.mostrar();

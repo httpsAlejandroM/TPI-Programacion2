@@ -38,6 +38,7 @@
 		<Unit filename="clsCategoria.h" />
 		<Unit filename="clsCategoriasMenu.cpp" />
 		<Unit filename="clsCategoriasMenu.h" />
+		<Unit filename="clsCliente.cpp" />
 		<Unit filename="clsCliente.h" />
 		<Unit filename="clsClientesMenu.cpp" />
 		<Unit filename="clsClientesMenu.h" />
@@ -46,9 +47,13 @@
 		<Unit filename="clsObraSocial.h" />
 		<Unit filename="clsObrasSocialesMenu.cpp" />
 		<Unit filename="clsObrasSocialesMenu.h" />
+		<Unit filename="clsPersona.cpp" />
+		<Unit filename="clsPersona.h" />
+		<Unit filename="clsProducto.cpp" />
 		<Unit filename="clsProducto.h" />
 		<Unit filename="clsProductosMenu.cpp" />
 		<Unit filename="clsProductosMenu.h" />
+		<Unit filename="clsVendedor.cpp" />
 		<Unit filename="clsVendedor.h" />
 		<Unit filename="clsVendedoresMenu.cpp" />
 		<Unit filename="clsVendedoresMenu.h" />

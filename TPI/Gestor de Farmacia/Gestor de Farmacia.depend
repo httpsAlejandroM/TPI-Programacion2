@@ -4,12 +4,13 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
+1762735724 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
 	"clsVendedoresMenu.h"
 	"clsClientesMenu.h"
 	"clsCategoriasMenu.h"
 	"clsObrasSocialesMenu.h"
+	"clsVentasMenu.h"
 
 1761608797 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsmenuprincipal.cpp
 
@@ -124,5 +125,53 @@
 1762711453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsventasmenu.cpp
 	<iostream>
 	"clsVentasMenu.h"
+	"rlutil.h"
+
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\acercade.cpp
+	<iostream>
+	<string>
+	"clsApp.h"
+	"rlutil.h"
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.h
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientesmenu.h
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasmenu.h
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.h
+
+1762735724 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.h
+
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasmenu.cpp
+	<iostream>
+	"clsCategoriasMenu.h"
+	"rlutil.h"
+
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientesmenu.cpp
+	<iostream>
+	"clsClientesMenu.h"
+	"rlutil.h"
+
+1762645790 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.cpp
+	"clsFecha.h"
+
+1762645790 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.h
+	<string>
+
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
+	<iostream>
+	"clsObrasSocialesMenu.h"
+	"rlutil.h"
+
+1762645790 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
+	"clsProducto.h"
+	<cstring>
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.h
+
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.cpp
+	<iostream>
+	"clsVendedoresMenu.h"
 	"rlutil.h"
 

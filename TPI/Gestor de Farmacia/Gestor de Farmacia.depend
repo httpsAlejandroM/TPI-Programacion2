@@ -1,26 +1,30 @@
 # depslib dependency file v1.0
-1762299562 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
 	<iostream>
 	"clsApp.h"
 	"rlutil.h"
 
-1762299515 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
+	"clsVendedoresMenu.h"
+	"clsClientesMenu.h"
+	"clsCategoriasMenu.h"
+	"clsObrasSocialesMenu.h"
 
 1761608797 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsmenuprincipal.cpp
 
-1761608671 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\main.cpp
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\main.cpp
 	<iostream>
 	"clsApp.h"
 
-1762299665 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosmenu.cpp
+1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosmenu.cpp
 	<iostream>
 	"clsProductosMenu.h"
 	"rlutil.h"
 
-1762387268 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosmenu.h
+1762645790 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosmenu.h
 
-1750797079 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\rlutil.h
+1762645790 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\rlutil.h
 	<iostream>
 	<string>
 	<cstdio>

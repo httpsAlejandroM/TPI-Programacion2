@@ -21,24 +21,24 @@ void VentasMenu::mostrar(){
 
 void VentasMenu::mostrarOpciones(){
   cout << "--- MENU VENTAS ---" << endl;
-  cout << "1- GESTIONAR NUEVA VENTA"<<endl;
-  cout << "2- ANULAR VENTA"<<endl;
-  cout << "3- LISTAR VENTAS POR RANGO DE FECHA"<<endl;
-  cout << "4- LISTAR VENTAS POR CLIENTE"<<endl;
-  cout << "5- BUSCAR VENTA POR ID"<<endl;
-  cout << "0- Atras"<<endl;
+  cout << "  1- GESTIONAR NUEVA VENTA"<<endl;
+  cout << "  2- ANULAR VENTA"<<endl;
+  cout << "  3- LISTAR VENTAS POR RANGO DE FECHA"<<endl;
+  cout << "  4- LISTAR VENTAS POR CLIENTE"<<endl;
+  cout << "  5- BUSCAR VENTA POR ID"<<endl;
+  cout << "  0- Atras"<<endl;
 }
 
 int VentasMenu::seleccionarOpcion(){
   int opcion;
   mostrarOpciones();
   cout << "---------------" << endl;
-  cout << "Opcion: ";
+  cout << "  Opcion: ";
   cin >> opcion;
 
   while(opcion < 0 || opcion > _cantidadOpciones){
-    cout << "Opcion incorrecta..."<<endl;
-    cout << "Opcion: ";
+    cout << "  Opcion incorrecta..."<<endl;
+    cout << "  Opcion: ";
     cin >> opcion;
   }
   return opcion;
@@ -47,28 +47,28 @@ int VentasMenu::seleccionarOpcion(){
 void VentasMenu::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
-    cout << "GESTIONAR NUEVA VENTA" << endl;
+    cout << "  GESTIONAR NUEVA VENTA" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
-    cout << "ANULAR VENTA" << endl;
+    cout << "  ANULAR VENTA" << endl;
     // llama a cambioEstado de una Venta y devolver¡a el stock
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
-    cout << "LISTAR VENTAS POR RANGO DE FECHAS" << endl;
+    cout << "  LISTAR VENTAS POR RANGO DE FECHAS" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 4:
-    cout << "LISTAR VENTAS POR CLIENTE" << endl;
+    cout << "  LISTAR VENTAS POR CLIENTE" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 5:
-    cout << "BUSCAR VENTA POR ID" << endl;
+    cout << "  BUSCAR VENTA POR ID" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:
-    cout << "Volviendo al menu anterior" << endl;
+    cout << "  Volviendo al menu anterior" << endl;
     break;
   }
 }

@@ -26,7 +26,7 @@ void ClientesMenu::mostrarOpciones(){
   cout << "3- MODIFICAR DATOS CLIENTE "<<endl;
   cout << "4- VER TODOS LOS CLIENTES "<<endl;
   // TODO: Listado de clientes por apellido, obra social y edad
-  cout << "5- BUSCAR CLIENTE POR DNI/ID"<<endl; // <-- CAMBIO
+  cout << "5- BUSCAR CLIENTE POR DNI/ID"<<endl;
   cout << "0- Atras "<<endl;
 }
 

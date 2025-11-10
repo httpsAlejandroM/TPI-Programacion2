@@ -1,7 +1,7 @@
 #include "clsCliente.h"
 #include <cstring>  
 
-Vendedor::Vendedor()
+Cliente::Cliente()
 : Persona(0, "default", Fecha()),   
   _idObraSocial(0),
   _estado(false)
@@ -10,7 +10,7 @@ Vendedor::Vendedor()
     strcpy(_mail, "mail@default.com");
 }
 
-Vendedor::Vendedor(int dni, const char* nombre, Fecha fechaNacimiento,
+Cliente::Cliente(int dni, const char* nombre, Fecha fechaNacimiento,
                  const char* mail, const char* telefono,
                  int idObraSocial, bool estado)
 : Persona(dni, nombre, fechaNacimiento)
@@ -21,38 +21,38 @@ Vendedor::Vendedor(int dni, const char* nombre, Fecha fechaNacimiento,
     setEstado(estado);
 }
 
-void Vendedor::setMail(const char* mail) {
+void Cliente::setMail(const char* mail) {
         if(mail != nullptr){
         strcpy(_mail, mail);
     }
 }
 
-const char* Vendedor::getMail() {
+const char* Cliente::getMail() {
     return _mail;
 }
 
-void Vendedor::setTelefono(const char* telefono) {
+void Cliente::setTelefono(const char* telefono) {
     if(telefono != nullptr){
         strcpy(_telefono, telefono);
     }
 }
 
-const char* Vendedor::getTelefono() {
+const char* Cliente::getTelefono() {
     return _telefono;
 }
 
-void Vendedor::setIdObraSocial(int idObraSocial) {
+void Cliente::setIdObraSocial(int idObraSocial) {
     _idObraSocial = idObraSocial;
 }
 
-int Vendedor::getIdObraSocial() {
+int Cliente::getIdObraSocial() {
     return _idObraSocial;
 }
 
-void Vendedor::setEstado(bool estado) {
+void Cliente::setEstado(bool estado) {
     _estado = estado;
 }
 
-bool Vendedor::getEstado() {
+bool Cliente::getEstado() {
     return _estado;
 }

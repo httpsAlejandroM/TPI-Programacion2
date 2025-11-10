@@ -2,11 +2,11 @@
 #include "clsFecha.h"
 #include "clsPersona.h"
 
-class Vendedor : public Persona {
+class Cliente : public Persona {
 
 public:
-    Vendedor();
-    Vendedor(int dni, const char* nombre, Fecha fechaNacimiento, const char* mail, const char* telefono, int idObraSocial, bool estado);
+    Cliente();
+    Cliente(int dni, const char* nombre, Fecha fechaNacimiento, const char* mail, const char* telefono, int idObraSocial, bool estado);
 
     void setMail(const char* mail);
     const char* getMail();

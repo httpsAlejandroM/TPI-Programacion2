@@ -1,5 +1,5 @@
 #pragma once
-#include "Fecha.h"
+#include "clsFecha.h"
 
 class Ventas {
 

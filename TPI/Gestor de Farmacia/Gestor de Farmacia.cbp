@@ -35,7 +35,9 @@
 		<Unit filename="acercaDe.cpp" />
 		<Unit filename="clsApp.cpp" />
 		<Unit filename="clsApp.h" />
+		<Unit filename="clsCategoria.cpp" />
 		<Unit filename="clsCategoria.h" />
+		<Unit filename="clsCategoriasArchivo.h" />
 		<Unit filename="clsCategoriasMenu.cpp" />
 		<Unit filename="clsCategoriasMenu.h" />
 		<Unit filename="clsCliente.cpp" />

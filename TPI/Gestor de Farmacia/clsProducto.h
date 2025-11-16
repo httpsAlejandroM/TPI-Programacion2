@@ -31,6 +31,8 @@ public:
     void setReceta(bool receta);
     bool getReceta();
 
+    void mostrar();
+
     private:
     int _idProducto;
     char _nombre[50];

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
+1762735724 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
 	<iostream>
 	"clsApp.h"
 	"rlutil.h"
@@ -173,5 +173,33 @@
 1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.cpp
 	<iostream>
 	"clsVendedoresMenu.h"
+	"rlutil.h"
+
+1762735129 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscliente.cpp
+	"clsCliente.h"
+	<cstring>
+
+1762735106 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscliente.h
+	"clsFecha.h"
+	"clsPersona.h"
+
+1762651965 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clspersona.h
+	"clsFecha.h"
+
+1762650636 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clspersona.cpp
+	"clsPersona.h"
+	<cstring>
+
+1762735056 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedor.cpp
+	"clsVendedor.h"
+	<cstring>
+
+1762735055 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedor.h
+	"clsFecha.h"
+	"clsPersona.h"
+
+1762735724 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.cpp
+	<iostream>
+	"clsVentasMenu.h"
 	"rlutil.h"
 

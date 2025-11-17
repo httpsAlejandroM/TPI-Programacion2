@@ -9,6 +9,7 @@ public:
     bool guardar(Categoria registro);
     int buscarPorID(int id);
     Categoria leerRegistro(int pos);
+    bool leerTodos(Categoria categorias[], int cantidad);
     int contarRegistros();
     int getNuevoID();
     bool modificarRegistro(int pos, Categoria registro);

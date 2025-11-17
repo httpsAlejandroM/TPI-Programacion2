@@ -1,4 +1,5 @@
 #pragma once
+#include "clsCategoriaManager.h"
 
 class CategoriasMenu
 {
@@ -12,7 +13,7 @@ protected:
     int seleccionarOpcion();
     void ejecutarOpcion(int opcion);
 
-
+    CategoriaManager _categoriaManager;
 private:
     int _cantidadOpciones;
 

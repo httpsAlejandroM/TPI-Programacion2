@@ -31,7 +31,7 @@ Categoria CategoriasArchivo::leerRegistro(int pos){
 
     if(pFile == nullptr){
         registro.setIdCategoria(0);
-        registro.setEstado(true);
+        registro.setEstado(false);
         return registro;
     }
 
@@ -39,12 +39,26 @@ Categoria CategoriasArchivo::leerRegistro(int pos){
 
     if(!fread(&registro, sizeof(Categoria), 1, pFile)){
         registro.setIdCategoria(0);
-        registro.setEstado(true);
+        registro.setEstado(false);
     }
 
     fclose(pFile);
 
     return registro;
+}
+
+bool CategoriasArchivo::leerTodos(Categoria categorias[], int cantidad){
+    FILE *pFile;
+
+    pFile = fopen(_nombreArchivo, "rb");
+
+    if(pFile == nullptr) return false;
+
+    fread(categorias, sizeof(Categoria), cantidad, pFile);
+
+    fclose(pFile);
+
+    return true;
 }
 
 int CategoriasArchivo::buscarPorID(int id){ //Devuelve la posicion del registro

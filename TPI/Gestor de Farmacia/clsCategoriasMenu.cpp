@@ -46,8 +46,10 @@ int CategoriasMenu::seleccionarOpcion(){
 
 void CategoriasMenu::ejecutarOpcion(int opcion){
   switch(opcion){
+  //TODO: AGREGAR TODOS LOS METODOS DEL MANAGER
   case 1:
     cout << "AGREGAR CATEGORIA" << endl;
+    _categoriaManager.cargarCategoria();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
@@ -60,6 +62,7 @@ void CategoriasMenu::ejecutarOpcion(int opcion){
     break;
   case 4:
     cout << "VER CATEGORIAS" << endl;
+    _categoriaManager.listarCategorias();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 5:

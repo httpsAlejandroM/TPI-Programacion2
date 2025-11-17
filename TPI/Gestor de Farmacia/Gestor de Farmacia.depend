@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1762735724 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
+1763342122 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
 	<iostream>
 	"clsApp.h"
 	"rlutil.h"
@@ -137,7 +137,8 @@
 
 1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientesmenu.h
 
-1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasmenu.h
+1763337430 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasmenu.h
+	"clsCategoriaManager.h"
 
 1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.h
 
@@ -164,11 +165,11 @@
 	"clsObrasSocialesMenu.h"
 	"rlutil.h"
 
-1762645790 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
-	"clsProducto.h"
+1762814210 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
 	<cstring>
+	"clsProducto.h"
 
-1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.h
+1763261005 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.h
 
 1762646152 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.cpp
 	<iostream>
@@ -202,4 +203,25 @@
 	<iostream>
 	"clsVentasMenu.h"
 	"rlutil.h"
+
+1763342091 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriamanager.h
+	"clsCategoriasArchivo.h"
+
+1763336598 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasarchivo.h
+	"clsCategoria.h"
+
+1762646152 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoria.h
+
+1763341478 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoria.cpp
+	<cstring>
+	"clsCategoria.h"
+
+1763342089 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriamanager.cpp
+	"clsCategoriaManager.h"
+	<iostream>
+
+1763341279 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasarchivo.cpp
+	"clsCategoriasArchivo.h"
+	<cstring>
+	<iostream>
 

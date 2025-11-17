@@ -17,7 +17,7 @@ void App::run(){
         ejecutarOpcion(opcion);
     } while (opcion != 0);
 }
-//TODO: Agregar cpp y .h de clases ProductosMenu, VentasMenu, ClientesMenu, OSocialesMenus, VendedoresMenu
+
 void App::mostrarOpciones(){
   cout << "--- MENU PRINCIPAL ---" <<endl<<endl;
   cout << "  1- PRODUCTOS "<<endl;

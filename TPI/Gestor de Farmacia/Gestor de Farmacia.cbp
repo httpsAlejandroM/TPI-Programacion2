@@ -51,6 +51,8 @@
 		<Unit filename="clsFecha.h" />
 		<Unit filename="clsObraSocial.cpp" />
 		<Unit filename="clsObraSocial.h" />
+		<Unit filename="clsObraSocialManager.cpp" />
+		<Unit filename="clsObraSocialManager.h" />
 		<Unit filename="clsObrasSocialesArchivo.cpp" />
 		<Unit filename="clsObrasSocialesArchivo.h" />
 		<Unit filename="clsObrasSocialesMenu.cpp" />

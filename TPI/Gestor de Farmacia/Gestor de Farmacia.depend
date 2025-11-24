@@ -112,10 +112,11 @@
 	"clsCategoriasMenu.h"
 	"rlutil.h"
 
-1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
+1764010128 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
 	"clsCategoriaManager.h"
 
-1762638010 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.h
+1764010153 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.h
+	"clsObraSocialManager.h"
 
 1762638010 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
 	<iostream>
@@ -278,4 +279,20 @@
 	"clsObraSocial.h"
 
 1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocial.h
+
+1764009622 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocialmanager.cpp
+	"clsObraSocialManager.h"
+	<iostream>
+	<cstring>
+
+1764008647 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocialmanager.h
+	"clsObrasSocialesArchivo.h"
+
+1764008465 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesarchivo.h
+	"clsObraSocial.h"
+
+1764008465 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesarchivo.cpp
+	"clsObrasSocialesArchivo.h"
+	<cstring>
+	<iostream>
 

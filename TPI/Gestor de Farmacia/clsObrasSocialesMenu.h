@@ -1,4 +1,5 @@
 #pragma once
+#include "clsObraSocialManager.h"
 
 class ObrasSocialesMenu
 {
@@ -12,6 +13,7 @@ protected:
     int seleccionarOpcion();
     void ejecutarOpcion(int opcion);
 
+    ObraSocialManager _obraSocialManager;
 
 private:
     int _cantidadOpciones;

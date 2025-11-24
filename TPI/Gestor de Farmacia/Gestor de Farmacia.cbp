@@ -49,6 +49,7 @@
 		<Unit filename="clsClientesMenu.h" />
 		<Unit filename="clsFecha.cpp" />
 		<Unit filename="clsFecha.h" />
+		<Unit filename="clsObraSocial.cpp" />
 		<Unit filename="clsObraSocial.h" />
 		<Unit filename="clsObrasSocialesMenu.cpp" />
 		<Unit filename="clsObrasSocialesMenu.h" />

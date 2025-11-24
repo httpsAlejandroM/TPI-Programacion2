@@ -3,7 +3,6 @@
 class ObraSocial {
 
 public:
-
     ObraSocial();
     ObraSocial(int idOS, const char* nombre, float porcentajeDescuento, bool estado);
 
@@ -25,5 +24,4 @@ private:
     float _porcentajeDescuento;
     bool _estado;
 };
-
 

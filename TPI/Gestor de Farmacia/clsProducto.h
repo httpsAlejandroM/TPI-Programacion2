@@ -25,8 +25,8 @@ public:
     void setEstado(bool estado);
     bool getEstado();
 
-    void setIDCategoria(int categoria);
-    int getIDCategoria();
+    void setIdCategoria(int categoria);
+    int getIdCategoria();
 
     void setReceta(bool receta);
     bool getReceta();

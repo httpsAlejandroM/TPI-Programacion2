@@ -1,5 +1,8 @@
 #include <cstring>
 #include "clsProducto.h"
+#include <iostream>
+using namespace std;
+
 
 Producto::Producto() {
     _idProducto = 0;
@@ -17,8 +20,10 @@ Producto::Producto(int idProducto, const char* nombre, const char* marca,
                    int idCategoria, bool recetaObligatoria) 
 {
     _idProducto = idProducto;
-    strcpy(_nombre, nombre);
-    strcpy(_marca, marca);
+    strncpy(_nombre, nombre, 49);
+    _nombre[49] = '\0';
+    strncpy(_marca, marca, 49);
+    _marca[49] = '\0';
     _stock = stock;
     _precio = precio;
     _estado = estado;
@@ -35,7 +40,8 @@ int Producto::getIdProducto() {
 }
 
 void Producto::setNombre(const char* nombre) {
-    strcpy(_nombre, nombre);
+    strncpy(_nombre, nombre, 49);
+    _nombre[49] = '\0';
 }
 
 const char* Producto::getNombre() {
@@ -43,7 +49,8 @@ const char* Producto::getNombre() {
 }
 
 void Producto::setMarca(const char* marca) {
-    strcpy(_marca, marca);
+    strncpy(_marca, marca, 49);
+    _marca[49] = '\0';
 }
 
 const char* Producto::getMarca() {
@@ -51,6 +58,10 @@ const char* Producto::getMarca() {
 }
 
 void Producto::setStock(int stock) {
+   if(stock < 0){
+    _stock = 0;
+     return;
+   } 
     _stock = stock;
 }
 
@@ -59,6 +70,10 @@ int Producto::getStock() {
 }
 
 void Producto::setPrecio(float precio) {
+   if(precio <= 0) {
+    _precio = 0;
+   }
+
     _precio = precio;
 }
 
@@ -74,11 +89,11 @@ bool Producto::getEstado() {
     return _estado;
 }
 
-void Producto::setIDCategoria(int categoria) {
+void Producto::setIdCategoria(int categoria) {
     _idCategoria = categoria;
 }
 
-int Producto::getIDCategoria() {
+int Producto::getIdCategoria() {
     return _idCategoria;
 }
 
@@ -88,4 +103,15 @@ void Producto::setReceta(bool receta) {
 
 bool Producto::getReceta() {
     return _recetaObligatoria;
+}
+
+void Producto::mostrar(){
+    cout << "ID: " << _idProducto << endl;
+    cout << "Nombre: " << _nombre << endl;
+    cout << "Marca: " << _marca << endl;
+    cout << "Stock: " << _stock << endl;
+    cout << "Precio: " << _precio << endl;
+    cout << "Estado: " << (_estado ? "Habilitado" : "Deshabilitado") << endl;
+    cout << "ID Categoria: " << _idCategoria << endl;
+    cout << "Receta Obligatoria: " << (_recetaObligatoria ? "Si" : "No") << endl;
 }

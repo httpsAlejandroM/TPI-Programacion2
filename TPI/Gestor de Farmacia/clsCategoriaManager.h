@@ -8,7 +8,8 @@ class CategoriaManager {
     void cargarCategoria();
     void listarCategorias();
     void eliminarCategoria();
-    void mostrarCategoriaOrdenada();
+    void modificarCategoria();
+    void buscarCategoria();
 
     protected:
     void mostrarCategoria(Categoria categoria);

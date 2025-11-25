@@ -22,7 +22,7 @@ void CategoriasMenu::mostrar(){
 void CategoriasMenu::mostrarOpciones(){
   cout << "--- MENU CATEGORIAS ---" << endl;
   cout << "1- AGREGAR CATEGORIA "<<endl;
-  cout << "2- BORRAR CATEGORIA "<<endl;
+  cout << "2- HABILITAR/DESHABILITAR CATEGORIA "<<endl;
   cout << "3- MODIFICAR CATEGORIA "<<endl;
   cout << "4- VER TODAS LAS CATEGORIAS "<<endl;
   cout << "5- BUSCAR CATEGORIA POR ID"<<endl;
@@ -53,11 +53,13 @@ void CategoriasMenu::ejecutarOpcion(int opcion){
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
-    cout << "BORRAR CATEGORIA" << endl;
+    cout << "HABILITAR/DESHABILITAR CATEGORIA" << endl;
+    _categoriaManager.eliminarCategoria();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
     cout << "MODIFICAR CATEGORIA" << endl;
+    _categoriaManager.modificarCategoria();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 4:
@@ -67,6 +69,7 @@ void CategoriasMenu::ejecutarOpcion(int opcion){
     break;
   case 5:
     cout << "BUSCAR CATEGORIA" << endl;
+    _categoriaManager.buscarCategoria();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:

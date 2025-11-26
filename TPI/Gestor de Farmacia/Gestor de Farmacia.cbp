@@ -61,6 +61,10 @@
 		<Unit filename="clsPersona.h" />
 		<Unit filename="clsProducto.cpp" />
 		<Unit filename="clsProducto.h" />
+		<Unit filename="clsProductoManager.cpp" />
+		<Unit filename="clsProductoManager.h" />
+		<Unit filename="clsProductosArchivo.cpp" />
+		<Unit filename="clsProductosArchivo.h" />
 		<Unit filename="clsProductosMenu.cpp" />
 		<Unit filename="clsProductosMenu.h" />
 		<Unit filename="clsVendedor.cpp" />
@@ -71,6 +75,8 @@
 		<Unit filename="clsVentasMenu.cpp" />
 		<Unit filename="clsVentasMenu.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="utils.cpp" />
+		<Unit filename="utils.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

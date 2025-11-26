@@ -47,7 +47,7 @@ int ObrasSocialesMenu::seleccionarOpcion(){
 void ObrasSocialesMenu::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
-    cout << "AGREGAR OBRA SOCIAL" << endl;
+    _obraSocialManager.cargarObraSocial();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:

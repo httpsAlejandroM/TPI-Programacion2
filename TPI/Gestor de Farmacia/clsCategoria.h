@@ -3,7 +3,6 @@
 class Categoria {
 
 public:
-
     Categoria();
     Categoria(int idCategoria, const char* nombre, bool estado);
 

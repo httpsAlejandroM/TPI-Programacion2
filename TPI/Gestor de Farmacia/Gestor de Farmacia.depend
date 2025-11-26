@@ -40,8 +40,9 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1762609871 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoria.cpp
-	<iostream>
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoria.cpp
+	<cstring>
+	"clsCategoria.h"
 
 1762486799 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsfecha.cpp
 	"clsFecha.h"
@@ -70,12 +71,12 @@
 	<sys/types.h>
 	<sys/time.h>
 
-1762638010 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.cpp
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.cpp
 	<iostream>
 	"clsApp.h"
 	"rlutil.h"
 
-1762711504 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
+1762712513 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
 	"clsVendedoresMenu.h"
 	"clsClientesMenu.h"
@@ -96,7 +97,7 @@
 
 1762630624 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.h
 
-1762638010 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.cpp
+1763238307 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsclientesmenu.cpp
 	<iostream>
 	"clsClientesMenu.h"
 	"rlutil.h"
@@ -107,23 +108,25 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1762635364 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.cpp
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.cpp
 	<iostream>
 	"clsCategoriasMenu.h"
 	"rlutil.h"
 
-1762635364 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
+1764010128 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasmenu.h
+	"clsCategoriaManager.h"
 
-1762638010 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.h
+1764010153 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.h
+	"clsObraSocialManager.h"
 
 1762638010 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
 	<iostream>
 	"clsObrasSocialesMenu.h"
 	"rlutil.h"
 
-1762711425 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsventasmenu.h
+1762712513 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsventasmenu.h
 
-1762711453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsventasmenu.cpp
+1763238307 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsventasmenu.cpp
 	<iostream>
 	"clsVentasMenu.h"
 	"rlutil.h"
@@ -226,10 +229,80 @@
 	<cstring>
 	<iostream>
 
+<<<<<<< HEAD
 1764002155 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductomanager.h
 	"clsProductosArchivo.h"
 	"clsProducto.h"
 
 1764002241 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosarchivo.h
 	"clsProducto.h"
+=======
+1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriamanager.h
+	"clsCategoriasArchivo.h"
+
+1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasarchivo.h
+	"clsCategoria.h"
+
+1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoria.h
+
+1762745250 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscliente.cpp
+	"clsCliente.h"
+	<cstring>
+
+1762745250 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscliente.h
+	"clsFecha.h"
+	"clsPersona.h"
+
+1762745250 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clspersona.h
+	"clsFecha.h"
+
+1762745250 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clspersona.cpp
+	"clsPersona.h"
+	<cstring>
+
+1763005476 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsproducto.cpp
+	<cstring>
+	"clsProducto.h"
+
+1763304749 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsproducto.h
+
+1762745250 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsvendedor.cpp
+	"clsVendedor.h"
+	<cstring>
+
+1762745250 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsvendedor.h
+	"clsFecha.h"
+	"clsPersona.h"
+
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriamanager.cpp
+	"clsCategoriaManager.h"
+	<iostream>
+
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clscategoriasarchivo.cpp
+	"clsCategoriasArchivo.h"
+	<cstring>
+	<iostream>
+
+1764007453 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocial.cpp
+	<cstring>
+	"clsObraSocial.h"
+
+1764007453 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocial.h
+
+1764009622 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocialmanager.cpp
+	"clsObraSocialManager.h"
+	<iostream>
+	<cstring>
+
+1764008647 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrasocialmanager.h
+	"clsObrasSocialesArchivo.h"
+
+1764008465 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesarchivo.h
+	"clsObraSocial.h"
+
+1764008465 source:c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsobrassocialesarchivo.cpp
+	"clsObrasSocialesArchivo.h"
+	<cstring>
+	<iostream>
+>>>>>>> main
 

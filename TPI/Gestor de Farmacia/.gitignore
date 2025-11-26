@@ -4,6 +4,7 @@
 *.dll
 *.layout
 *.depend
+*.dat
 bin/
 obj/
 

@@ -6,6 +6,7 @@ class Persona {
     protected:
     Persona(int id, const char* nombre, Fecha fechaNacimiento); 
 
+    public:
     void setIdPersona(int id);
     int getIdPersona();
 

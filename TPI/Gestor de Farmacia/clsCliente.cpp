@@ -23,7 +23,8 @@ Cliente::Cliente(int dni, const char* nombre, Fecha fechaNacimiento,
 
 void Cliente::setMail(const char* mail) {
         if(mail != nullptr){
-        strcpy(_mail, mail);
+        strncpy(_mail, mail, sizeof(_mail));
+        _mail[sizeof(_mail) - 1] = '\0'; 
     }
 }
 
@@ -33,7 +34,8 @@ const char* Cliente::getMail() {
 
 void Cliente::setTelefono(const char* telefono) {
     if(telefono != nullptr){
-        strcpy(_telefono, telefono);
+        strncpy(_telefono, telefono, sizeof(_telefono));
+        _telefono[sizeof(_telefono) - 1] = '\0';
     }
 }
 

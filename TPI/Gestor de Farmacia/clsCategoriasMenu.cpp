@@ -46,7 +46,6 @@ int CategoriasMenu::seleccionarOpcion(){
 
 void CategoriasMenu::ejecutarOpcion(int opcion){
   switch(opcion){
-  //TODO: AGREGAR TODOS LOS METODOS DEL MANAGER
   case 1:
     cout << "AGREGAR CATEGORIA" << endl;
     _categoriaManager.cargarCategoria();

@@ -26,7 +26,6 @@ Cliente ClientesArchivo::leerRegistro(int pos) {
     int cantidadRegistros = contarRegistros();
 
     if (pos < 0 || pos >= cantidadRegistros) { 
-        // Valores por defecto si la posición es inválida
         registro.setIdPersona(0);
         registro.setNombre("-");
         registro.setFechaNacimiento( Fecha(1,1,1900) );

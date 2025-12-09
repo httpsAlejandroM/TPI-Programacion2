@@ -16,6 +16,8 @@ class Fecha
     int getAnio();
     void setAnio(int anio);
 
+    void cargar();
+
     std::string toString(); /// DD/MM/YYYY
 
   private:

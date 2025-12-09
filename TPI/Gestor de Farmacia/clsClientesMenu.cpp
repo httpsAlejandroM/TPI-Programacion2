@@ -49,22 +49,27 @@ void ClientesMenu::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
     cout << "AGREGAR CLIENTE" << endl;
+    _clienteManager.cargarCliente();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
     cout << "BORRAR CLIENTE" << endl;
+    _clienteManager.eliminarCliente();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
     cout << "MODIFICAR DATOS CLIENTE" << endl;
+    _clienteManager.modificarCliente();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 4:
     cout << "VER CLIENTES" << endl;
+    _clienteManager.listarClientes();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 5:
     cout << "BUSCAR CLIENTE" << endl;
+    _clienteManager.buscarCliente();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:

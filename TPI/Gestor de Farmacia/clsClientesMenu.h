@@ -1,4 +1,5 @@
 #pragma once
+#include "clsClienteManager.h"
 
 class ClientesMenu
 {
@@ -12,7 +13,7 @@ protected:
     int seleccionarOpcion();
     void ejecutarOpcion(int opcion);
 
-
+    ClienteManager _clienteManager;
 private:
     int _cantidadOpciones;
 

@@ -21,9 +21,9 @@ bool CategoriasArchivo::guardar(Categoria registro){
 }
 
 Categoria CategoriasArchivo::leerRegistro(int pos){
-    int cantidadRegistros = contarRegistros();
     FILE *pFile;
     Categoria registro;
+    int cantidadRegistros = contarRegistros();
 
     if(pos < 0 || pos >= cantidadRegistros){ //registro invalido
         registro.setIdCategoria(-1);
@@ -49,7 +49,6 @@ Categoria CategoriasArchivo::leerRegistro(int pos){
     }
 
     fclose(pFile);
-
     return registro;
 }
 
@@ -66,20 +65,6 @@ bool CategoriasArchivo::leerTodos(Categoria categorias[], int cantidad){
     return true;
 }
 
-int CategoriasArchivo::buscarPorID(int id){ //Devuelve la posicion del registro
-    int cantRegistros = contarRegistros();
-    Categoria categoria;
-
-    for(int i = 0; i < cantRegistros; i++){
-        categoria = leerRegistro(i);
-        if(categoria.getIdCategoria() == id){
-            return i;
-        } 
-    }
-
-    return -1;
-}
-
 int CategoriasArchivo::contarRegistros(){
     FILE *pFile;
 
@@ -92,6 +77,20 @@ int CategoriasArchivo::contarRegistros(){
     fclose(pFile);
 
     return bytes/sizeof(Categoria);
+}
+
+int CategoriasArchivo::buscarPorID(int id){ //Devuelve la posicion del registro
+    int cantRegistros = contarRegistros();
+    Categoria categoria;
+
+    for(int i = 0; i < cantRegistros; i++){
+        categoria = leerRegistro(i);
+        if(categoria.getIdCategoria() == id){
+            return i;
+        } 
+    }
+
+    return -1;
 }
 
 bool CategoriasArchivo::modificarRegistro(int pos, Categoria categoria){

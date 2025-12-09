@@ -45,6 +45,10 @@
 		<Unit filename="clsCategoriasMenu.h" />
 		<Unit filename="clsCliente.cpp" />
 		<Unit filename="clsCliente.h" />
+		<Unit filename="clsClienteManager.cpp" />
+		<Unit filename="clsClienteManager.h" />
+		<Unit filename="clsClientesArchivo.cpp" />
+		<Unit filename="clsClientesArchivo.h" />
 		<Unit filename="clsClientesMenu.cpp" />
 		<Unit filename="clsClientesMenu.h" />
 		<Unit filename="clsFecha.cpp" />

@@ -1,12 +1,12 @@
 #pragma once
 #include "clsFecha.h"
 
-class Ventas {
+class Venta {
 
 public:
 
-    Ventas();
-    Ventas(int idVenta, Fecha fecha, int idCliente, int idVendedor, float totalBruto, float descuento, float totalNeto, const char* metodoPago, bool estado);
+    Venta();
+    Venta(int idVenta, Fecha fecha, int idCliente, int idVendedor, float totalBruto, float descuento, float totalNeto, const char* metodoPago, bool estado);
 
     void setIdVenta(int idVenta);
     int getIdVenta();

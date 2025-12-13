@@ -73,7 +73,7 @@ int ProductosArchivo::contarRegistros() {
     int bytes = ftell(pFile);
     fclose(pFile);
 
-    return bytes/sizeof(Producto);
+    return bytes / sizeof(Producto);
 }
 
 int ProductosArchivo::buscarPorID(int id) {
@@ -107,6 +107,7 @@ bool ProductosArchivo::modificarRegistro(int pos, Producto prod) {
 
     fseek(pFile, pos * sizeof(Producto), SEEK_SET);
     bool result = fwrite(&prod, sizeof(Producto), 1, pFile);
+    
     fclose(pFile);
     return result;
 }

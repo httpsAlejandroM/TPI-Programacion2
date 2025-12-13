@@ -77,6 +77,10 @@
 		<Unit filename="clsVendedoresMenu.h" />
 		<Unit filename="clsVenta.cpp" />
 		<Unit filename="clsVenta.h" />
+		<Unit filename="clsVentaManager.cpp" />
+		<Unit filename="clsVentaManager.h" />
+		<Unit filename="clsVentasArchivo.cpp" />
+		<Unit filename="clsVentasArchivo.h" />
 		<Unit filename="clsVentasMenu.cpp" />
 		<Unit filename="clsVentasMenu.h" />
 		<Unit filename="main.cpp" />

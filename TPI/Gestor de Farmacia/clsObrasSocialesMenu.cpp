@@ -51,11 +51,11 @@ void ObrasSocialesMenu::ejecutarOpcion(int opcion){
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
-    cout << "BORRAR OBRA SOCIAL" << endl;
+    _obraSocialManager.eliminarObraSocial();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
-    cout << "MODIFICAR OBRA SOCIAL" << endl;
+    _obraSocialManager.modificarObraSocial();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 4:

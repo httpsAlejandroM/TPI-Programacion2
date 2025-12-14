@@ -7,8 +7,9 @@ public:
     ObraSocialManager();
     void cargarObraSocial();
     void listarObrasSociales();
-    // void eliminarObraSocial();
-    // void mostrarObraSocialOrdenada();
+    void modificarObraSocial();
+    void eliminarObraSocial();
+    void buscarObraSocial();
 
 protected:
     void mostrarObraSocial(ObraSocial obraSocial);

@@ -4,15 +4,16 @@
 using namespace std;
 
 
-Producto::Producto() {
-    _idProducto = 0;
+Producto::Producto()
+: _idProducto(0),
+  _stock(0),
+  _precio(0.0f),
+  _estado(false),
+  _idCategoria(0),
+  _recetaObligatoria(false)
+{
     _nombre[0] = '\0';
     _marca[0] = '\0';
-    _stock = 0;
-    _precio = 0.0f;
-    _estado = false;
-    _idCategoria = 0;
-    _recetaObligatoria = false;
 }
 
 Producto::Producto(int idProducto, const char* nombre, const char* marca,

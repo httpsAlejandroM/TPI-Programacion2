@@ -1,18 +1,18 @@
-#include "clsClienteManager.h"
+#include "clsVendedoresManager.h"
 #include <iostream>
 #include <string>
 #include "rlutil.h"
 using namespace std;
 
-ClienteManager::ClienteManager() {}
+VendedorManager::VendedorManager() {}
 
-void ClienteManager::cargarCliente() {
-    int dni, idObraSocial;
-    char nombre[50], mail[50], telefono[20];
+void VendedorManager::cargarVendedor() {
+    int dni;
+    char nombre[50], mail[40], telefono[20], direccion[50];
     Fecha fechaNacimiento;
     bool estado = true;
 
-    cout << "Ingrese DNI del cliente: ";
+    cout << "Ingrese DNI del vendedor: ";
     cin >> dni;
 
     cin.ignore();
@@ -20,78 +20,79 @@ void ClienteManager::cargarCliente() {
     cin.getline(nombre, 50);
 
     cout << "Ingrese fecha de nacimiento: " << endl;
-    fechaNacimiento.cargar();  
+    fechaNacimiento.cargar();
 
     cin.ignore();
     cout << "Ingrese mail: ";
-    cin.getline(mail, 50);
+    cin.getline(mail, 40);
 
     cout << "Ingrese telefono: ";
     cin.getline(telefono, 20);
 
-    cout << "Ingrese ID de la obra social: ";
-    cin >> idObraSocial;
+    cout << "Ingrese direccion: ";
+    cin.getline(direccion, 50);
 
-    Cliente cliente(dni, nombre, fechaNacimiento, mail, telefono, idObraSocial, estado);
+    Vendedor vendedor(dni, nombre, fechaNacimiento, mail, telefono, direccion, estado);
 
-    if (_repo.guardar(cliente)) {
-        cout << "Cliente guardado exitosamente." << endl;
+    if (_repo.guardar(vendedor)) {
+        cout << "Vendedor guardado exitosamente." << endl;
     } else {
-        cout << "Error al guardar cliente." << endl;
+        cout << "Error al guardar vendedor." << endl;
     }
 }
 
-void ClienteManager::mostrarCliente(Cliente cliente) {
-    string estado = cliente.getEstado() ? "Habilitado" : "Deshabilitado";
+void VendedorManager::mostrarVendedor(Vendedor vendedor) {
+    string estado = vendedor.getEstado() ? "Habilitado" : "Deshabilitado";
 
-    cout << "DNI: " << cliente.getIdPersona() << endl;
-    cout << "Nombre: " << cliente.getNombre() << endl;
-    cout << "Fecha nacimiento: " << cliente.getFechaNacimiento().toString() << endl;
-    cout << "Mail: " << cliente.getMail() << endl;
-    cout << "Telefono: " << cliente.getTelefono() << endl;
-    cout << "ID Obra Social: " << cliente.getIdObraSocial() << endl;
+    cout << "DNI: " << vendedor.getIdPersona() << endl;
+    cout << "Nombre: " << vendedor.getNombre() << endl;
+    cout << "Fecha nacimiento: " << vendedor.getFechaNacimiento().toString() << endl;
+    cout << "Mail: " << vendedor.getMail() << endl;
+    cout << "Direccion: " << vendedor.getDireccion() << endl;
+    cout << "Telefono: " << vendedor.getTelefono() << endl;
     cout << "Estado: " << estado << endl;
 }
 
-void ClienteManager::listarClientes() {
+void VendedorManager::listarVendedores() {
     int cantidad = _repo.contarRegistros();
 
     for (int i = 0; i < cantidad; i++) {
-        Cliente cli = _repo.leerRegistro(i);
+        Vendedor vend = _repo.leerRegistro(i);
 
-        if (cli.getEstado()) {
-            mostrarCliente(cli);
+        if (vend.getEstado()) {
+            mostrarVendedor(vend);
             cout << "----------------------------" << endl;
         }
     }
 }
 
-void ClienteManager::eliminarCliente() {
+
+void VendedorManager::eliminarVendedor() {
     int dni, pos;
     char confirmacion;
     string accion;
 
-    cout << "Ingrese DNI del cliente a habilitar/deshabilitar: ";
+    cout << "Ingrese DNI del vendedor a habilitar/deshabilitar: ";
     cin >> dni;
 
     pos = _repo.buscarPorDNI(dni);
 
     if (pos < 0) {
-        cout << "No se encontro un cliente con el DNI " << dni << endl;
+        cout << "No se encontró un vendedor con el DNI " << dni << endl;
         return;
     }
 
-    Cliente cliente = _repo.leerRegistro(pos);
-    accion = cliente.getEstado() ? "deshabilitar" : "habilitar";
+    Vendedor vendedor = _repo.leerRegistro(pos);
+    accion = vendedor.getEstado() ? "deshabilitar" : "habilitar";
 
     do {
-        cout << "Desea " << accion << " al cliente: " << cliente.getNombre()
+        cout << "Desea " << accion << " al vendedor: " << vendedor.getNombre()
              << "? Ingrese 's'(SI) o 'n'(NO): ";
         cin >> confirmacion;
 
         if (confirmacion == 's' || confirmacion == 'S') {
             _repo.cambiarEstado(dni);
-            cout << "Estado del cliente cambiado correctamente." << endl;
+            cout << "Estado del vendedor cambiado correctamente." << endl;
         }
         else if (confirmacion == 'n' || confirmacion == 'N') {
             cout << "No se realizaron cambios." << endl;
@@ -105,50 +106,51 @@ void ClienteManager::eliminarCliente() {
              confirmacion != 'n' && confirmacion != 'N');
 }
 
-void ClienteManager::buscarCliente() {
+
+void VendedorManager::buscarVendedor() {
     int dni;
-    cout << "Ingrese DNI del cliente a buscar: ";
+    cout << "Ingrese DNI del vendedor a buscar: ";
     cin >> dni;
 
     int pos = _repo.buscarPorDNI(dni);
 
     if (pos < 0) {
-        cout << "No se encontro un cliente con ese DNI." << endl;
+        cout << "No se encontró un vendedor con ese DNI." << endl;
         return;
     }
 
-    Cliente cli = _repo.leerRegistro(pos);
-    mostrarCliente(cli);
+    Vendedor vend = _repo.leerRegistro(pos);
+    mostrarVendedor(vend);
 }
 
-Cliente ClienteManager::buscarCliente(int dni) {
-    Cliente cliente;
+Vendedor VendedorManager::buscarVendedor(int dni) {
+    Vendedor vendedor;
 
     int pos = _repo.buscarPorDNI(dni);
 
     if (pos < 0) {
-        return cliente;
+        return vendedor;
     }
 
-    cliente = _repo.leerRegistro(pos);
-    return cliente;
+    vendedor = _repo.leerRegistro(pos);
+    return vendedor;
 }
 
-void ClienteManager::modificarCliente() {
+void VendedorManager::modificarVendedor() {
     int dni, pos;
 
-    cout << "Ingrese DNI del cliente a modificar: ";
+    cout << "Ingrese DNI del vendedor a modificar: ";
     cin >> dni;
 
     pos = _repo.buscarPorDNI(dni);
 
     if (pos < 0) {
-        cout << "No se encontro un cliente con ese DNI." << endl;
+        cout << "No se encontró un vendedor con ese DNI." << endl;
         return;
     }
 
-    Cliente clienteOriginal = _repo.leerRegistro(pos);
-    Cliente modificado = clienteOriginal;
+    Vendedor vendedorOriginal = _repo.leerRegistro(pos);
+    Vendedor modificado = vendedorOriginal;
 
     int opcion;
     bool seguir = true;
@@ -159,7 +161,7 @@ void ClienteManager::modificarCliente() {
         cout << "2. Fecha Nacimiento\n";
         cout << "3. Mail\n";
         cout << "4. Telefono\n";
-        cout << "5. ID Obra Social\n";
+        cout << "5. Direccion\n";
         cout << "0. Terminar modificacion\n";
         cout << "Elija una opcion: ";
         cin >> opcion;
@@ -167,6 +169,7 @@ void ClienteManager::modificarCliente() {
         cin.ignore();
 
         switch (opcion) {
+
             case 1: {
                 char nombre[50];
                 cout << "Nuevo nombre: ";
@@ -174,20 +177,23 @@ void ClienteManager::modificarCliente() {
                 modificado.setNombre(nombre);
                 break;
             }
+
             case 2: {
                 Fecha f;
-                cout << "Nueva fecha: " << endl;
+                cout << "Nueva fecha de nacimiento:\n";
                 f.cargar();
                 modificado.setFechaNacimiento(f);
                 break;
             }
+
             case 3: {
-                char mail[50];
+                char mail[40];
                 cout << "Nuevo mail: ";
-                cin.getline(mail, 50);
+                cin.getline(mail, 40);
                 modificado.setMail(mail);
                 break;
             }
+
             case 4: {
                 char tel[20];
                 cout << "Nuevo telefono: ";
@@ -195,13 +201,15 @@ void ClienteManager::modificarCliente() {
                 modificado.setTelefono(tel);
                 break;
             }
+
             case 5: {
-                int idOS;
-                cout << "Nuevo ID obra social: ";
-                cin >> idOS;
-                modificado.setIdObraSocial(idOS);
+                char direccion[50];
+                cout << "Nueva direccion: ";
+                cin.getline(direccion, 50);
+                modificado.setDireccion(direccion);
                 break;
             }
+
             case 0:
                 seguir = false;
                 break;
@@ -212,8 +220,9 @@ void ClienteManager::modificarCliente() {
     }
 
     if (_repo.modificarRegistro(pos, modificado)) {
-        cout << "Cliente modificado correctamente.\n";
+        cout << "Vendedor modificado correctamente.\n";
     } else {
-        cout << "Error al modificar cliente.\n";
+        cout << "Error al modificar vendedor.\n";
     }
 }
+

@@ -32,6 +32,7 @@ public:
     bool getReceta();
 
     void mostrar();
+    void mostrarEnFila();
 
     private:
     int _idProducto;

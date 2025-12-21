@@ -15,6 +15,7 @@ public:
 
 protected:
     void mostrarProducto(Producto producto);
+    void mostrarEnFila(Producto producto);
 
 private:
     ProductosArchivo _repo;      

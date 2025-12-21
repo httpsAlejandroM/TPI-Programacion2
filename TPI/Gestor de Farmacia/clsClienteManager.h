@@ -10,6 +10,7 @@ public:
     void eliminarCliente();
     void modificarCliente();
     void buscarCliente();
+    Cliente buscarCliente(int dni);
 
 protected:
     void mostrarCliente(Cliente cliente);

@@ -140,7 +140,8 @@
 	"clsApp.h"
 	"rlutil.h"
 
-1764120880 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.h
+1766360455 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.h
+	"clsVendedoresManager.h"
 
 1765160718 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientesmenu.h
 	"clsClienteManager.h"
@@ -151,7 +152,8 @@
 1764120928 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.h
 	"clsObraSocialManager.h"
 
-1764120880 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.h
+1766348535 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.h
+	"clsVentaManager.h"
 
 1764885778 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clscategoriasmenu.cpp
 	<iostream>
@@ -163,26 +165,28 @@
 	"clsClientesMenu.h"
 	"rlutil.h"
 
-1765069243 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.cpp
+1766262937 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.cpp
 	"clsFecha.h"
 	<iostream>
+	<ctime>
 
 1765069185 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.h
 	<string>
 
-1764120928 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
+1766349125 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesmenu.cpp
 	<iostream>
 	"clsObrasSocialesMenu.h"
 	"rlutil.h"
 
-1764120904 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
+1766354710 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
 	<cstring>
 	"clsProducto.h"
 	<iostream>
+	<iomanip>
 
-1764120904 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.h
+1766354711 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.h
 
-1764120880 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.cpp
+1766360529 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmenu.cpp
 	<iostream>
 	"clsVendedoresMenu.h"
 	"rlutil.h"
@@ -202,7 +206,7 @@
 	"clsPersona.h"
 	<cstring>
 
-1764120880 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedor.cpp
+1766358696 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedor.cpp
 	"clsVendedor.h"
 	<cstring>
 
@@ -210,7 +214,7 @@
 	"clsFecha.h"
 	"clsPersona.h"
 
-1764120880 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.cpp
+1766348499 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.cpp
 	<iostream>
 	"clsVentasMenu.h"
 	"rlutil.h"
@@ -240,7 +244,7 @@
 
 1763341279 D
 
-1764120904 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductomanager.h
+1766354316 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductomanager.h
 	"clsProductosArchivo.h"
 	"clsProducto.h"
 
@@ -324,13 +328,13 @@
 
 1764008465 n
 
-1765068525 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientemanager.h
+1765926879 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientemanager.h
 	"clsClientesArchivo.h"
 
 1764889900 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientesarchivo.h
 	"clsCliente.h"
 
-1764120928 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocialmanager.h
+1765725430 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocialmanager.h
 	"clsObrasSocialesArchivo.h"
 
 1764120928 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesarchivo.h
@@ -338,7 +342,7 @@
 
 1764120928 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocial.h
 
-1765069287 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientemanager.cpp
+1766358104 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsclientemanager.cpp
 	"clsClienteManager.h"
 	<iostream>
 	<string>
@@ -349,38 +353,43 @@
 	<cstring>
 	<iostream>
 
-1764120928 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocial.cpp
+1765928923 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocial.cpp
 	<cstring>
 	"clsObraSocial.h"
 
-1764120928 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocialmanager.cpp
+1765725430 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrasocialmanager.cpp
 	"clsObraSocialManager.h"
 	<iostream>
 	<cstring>
+	"rlutil.h"
+	"utils.h"
 
 1764120928 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsobrassocialesarchivo.cpp
 	"clsObrasSocialesArchivo.h"
 	<cstring>
 	<iostream>
 
-1764120904 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductomanager.cpp
+1766354438 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductomanager.cpp
 	"clsProductoManager.h"
 	<iostream>
 	<string>
 	"rlutil.h"
 	"utils.h"
+	<iomanip>
 
-1764120904 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.h
+1766330468 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.h
 
-1764120904 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosarchivo.cpp
+1765495934 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproductosarchivo.cpp
 	"clsProductosArchivo.h"
 	<cstring>
 	<iostream>
 
-1764120904 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.cpp
+1766348298 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.cpp
 	<iostream>
 	"utils.h"
 	<cctype>
+	<iomanip>
+	<cstring>
 
 1765688712 c:\users\esteban reyes\onedrive - fmed.uba.ar\escritorio\tpi gestion de farmacia\tpi\gestor de farmacia\clsproductomanager.h
 	"clsProductosArchivo.h"
@@ -439,4 +448,70 @@
 	<iostream>
 	"utils.h"
 	<cctype>
+
+1766261211 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsnuevaventamenu.h
+	"clsVentaManager.h"
+
+1766348561 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
+	"clsClientesArchivo.h"
+	"clsObrasSocialesArchivo.h"
+	"clsVentasArchivo.h"
+	"clsDetalleVentaArchivo.h"
+	"clsVenta.h"
+	"clsDetalleVenta.h"
+	"clsProductosArchivo.h"
+	"clsVendedoresArchivo.h"
+
+1765491299 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasarchivo.h
+	"clsVenta.h"
+
+1765319780 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.h
+	"clsFecha.h"
+
+1765922759 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventaarchivo.h
+	"clsDetalleVenta.h"
+
+1765753901 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventa.h
+
+1766359791 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresarchivo.h
+	"clsVendedor.h"
+
+1765923006 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventa.cpp
+	"clsDetalleVenta.h"
+
+1765922806 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventaarchivo.cpp
+	"clsDetalleVentaArchivo.h"
+	<cstring>
+	<iostream>
+
+1766359845 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresarchivo.cpp
+	"clsVendedoresArchivo.h"
+	<cstring>
+	<iostream>
+
+1765320802 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.cpp
+	"clsVenta.h"
+	<cstring>
+
+1766354716 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
+	"clsVentaManager.h"
+	<iostream>
+	<cstring>
+	"rlutil.h"
+	"utils.h"
+	<iomanip>
+
+1765495943 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasarchivo.cpp
+	"clsVentasArchivo.h"
+	<cstring>
+	<iostream>
+
+1766359813 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmanager.h
+	"clsVendedoresArchivo.h"
+
+1766360098 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresmanager.cpp
+	"clsVendedoresManager.h"
+	<iostream>
+	<string>
+	"rlutil.h"
 

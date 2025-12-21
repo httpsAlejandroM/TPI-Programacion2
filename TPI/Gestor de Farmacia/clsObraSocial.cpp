@@ -4,7 +4,7 @@
 ObraSocial::ObraSocial() {
     _idOS = 0;
     _nombre[0] = '\0';
-    _porcentajeDescuento = 0.0;
+    _porcentajeDescuento = 0.0f;
     _estado = false;
 }
 

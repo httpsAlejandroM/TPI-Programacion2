@@ -72,5 +72,3 @@ float DetalleVenta::getSubtotal() {
 bool DetalleVenta::getEstado() {
     return _estado;
 }
-
-//TODO: hacer detalle ventaArchivo .h y . cpp

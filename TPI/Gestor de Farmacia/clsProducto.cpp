@@ -1,18 +1,21 @@
 #include <cstring>
 #include "clsProducto.h"
 #include <iostream>
+#include <iomanip> 
+
 using namespace std;
 
 
-Producto::Producto() {
-    _idProducto = 0;
+Producto::Producto()
+: _idProducto(0),
+  _stock(0),
+  _precio(0.0f),
+  _estado(false),
+  _idCategoria(0),
+  _recetaObligatoria(false)
+{
     _nombre[0] = '\0';
     _marca[0] = '\0';
-    _stock = 0;
-    _precio = 0.0f;
-    _estado = false;
-    _idCategoria = 0;
-    _recetaObligatoria = false;
 }
 
 Producto::Producto(int idProducto, const char* nombre, const char* marca,
@@ -114,4 +117,18 @@ void Producto::mostrar(){
     cout << "Estado: " << (_estado ? "Habilitado" : "Deshabilitado") << endl;
     cout << "ID Categoria: " << _idCategoria << endl;
     cout << "Receta Obligatoria: " << (_recetaObligatoria ? "Si" : "No") << endl;
+}
+
+void Producto::mostrarEnFila(){
+    string receta = _estado ? "Si" : "No";
+
+     cout << left
+             << setw(6)  << _idProducto
+             << setw(25) << _nombre
+             << setw(20) << _marca
+             << setw(10) << _precio
+             << setw(8)  << _stock
+             << setw(12) << _idCategoria
+             << setw(10) << (_recetaObligatoria ? "SI" : "NO")
+             << "\n";
 }

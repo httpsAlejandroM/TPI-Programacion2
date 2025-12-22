@@ -24,7 +24,6 @@ void VendedoresMenu::mostrarOpciones(){
   cout << "2- BORRAR VENDEDOR "<<endl;
   cout << "3- MODIFICAR DATOS VENDEDOR "<<endl;
   cout << "4- VER TODOS LOS VENDEDORES "<<endl;
-  //TODO: AGREGAR OPCIONES DESPUES DE LISTAR VENDEDORES PARA ORDENAR SEGUN: APELLIDO, CANT VENTAS DIA
   cout << "5- BUSCAR VENDEDOR POR DNI/ID"<<endl;
   cout << "0- Atras "<<endl;
 }
@@ -48,22 +47,27 @@ void VendedoresMenu::ejecutarOpcion(int opcion){
   switch(opcion){
   case 1:
     cout << "AGREGAR VENDEDOR" << endl;
+    _vendedorManager.cargarVendedor();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
     cout << "BORRAR VENDEDOR" << endl;
+    _vendedorManager.eliminarVendedor();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
     cout << "MODIFICAR DATOS VENDEDOR" << endl;
+    _vendedorManager.modificarVendedor();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 4:
     cout << "VER VENDEDORES" << endl;
+    _vendedorManager.listarVendedores();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 5:
     cout << "BUSCAR VENDEDOR" << endl;
+    _vendedorManager.buscarVendedor();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:

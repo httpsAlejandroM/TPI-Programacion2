@@ -3,6 +3,8 @@
 #include <string>
 #include "rlutil.h"
 #include "utils.h"
+#include <iomanip> 
+
 using namespace std;
 
 ProductoManager::ProductoManager() {}
@@ -22,7 +24,6 @@ void ProductoManager::cargarProducto() {
     cin.getline(nombre, 50);
 
     cout << "Ingrese la marca del producto: ";
-    cin.ignore();
     cin.getline(marca, 50);
 
     cout << "Ingrese el stock: ";
@@ -62,6 +63,20 @@ void ProductoManager::mostrarProducto(Producto prod) {
     cout << "Categoria (ID): " << prod.getIdCategoria() << endl;
     cout << "Requiere receta: " << receta << endl;
     cout << "Estado: " << estado << endl;
+}
+
+void ProductoManager::mostrarEnFila(Producto prod){
+    string receta = prod.getReceta() ? "Si" : "No";
+
+     cout << left
+             << setw(6)  << prod.getIdProducto()
+             << setw(25) << prod.getNombre()
+             << setw(20) << prod.getMarca()
+             << setw(10) << prod.getPrecio()
+             << setw(8)  << prod.getStock()
+             << setw(12) << prod.getIdCategoria()
+             << setw(10) << (prod.getReceta() ? "SI" : "NO")
+             << "\n";
 }
 
 void ProductoManager::listarProductos() {

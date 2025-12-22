@@ -60,10 +60,12 @@ void ObrasSocialesMenu::ejecutarOpcion(int opcion){
     break;
   case 4:
     cout << "VER OBRAS SOCIALES" << endl;
+    _obraSocialManager.listarObrasSociales();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 5:
     cout << "BUSCAR OBRA SOCIAL" << endl;
+    _obraSocialManager.buscarObraSocial();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:

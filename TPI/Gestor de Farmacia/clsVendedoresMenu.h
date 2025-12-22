@@ -1,4 +1,5 @@
 #pragma once
+#include "clsVendedoresManager.h"
 
 class VendedoresMenu
 {
@@ -15,6 +16,6 @@ protected:
 
 private:
     int _cantidadOpciones;
-
+    VendedorManager _vendedorManager;
 };
 

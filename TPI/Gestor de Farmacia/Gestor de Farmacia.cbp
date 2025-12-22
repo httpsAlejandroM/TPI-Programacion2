@@ -51,6 +51,10 @@
 		<Unit filename="clsClientesArchivo.h" />
 		<Unit filename="clsClientesMenu.cpp" />
 		<Unit filename="clsClientesMenu.h" />
+		<Unit filename="clsDetalleVenta.cpp" />
+		<Unit filename="clsDetalleVenta.h" />
+		<Unit filename="clsDetalleVentaArchivo.cpp" />
+		<Unit filename="clsDetalleVentaArchivo.h" />
 		<Unit filename="clsFecha.cpp" />
 		<Unit filename="clsFecha.h" />
 		<Unit filename="clsObraSocial.cpp" />

@@ -91,7 +91,6 @@ void VentaManager::nuevaVentaMenu() {
     } while (opcion != 0);
 }
 
-
 int VentaManager::cargarVendedor(Vendedor &vendedor) {
     system("cls");
     cout << "--- CARGAR VENDEDOR ---" << endl;
@@ -531,6 +530,7 @@ if (venta.getIdVendedor() == 0 || cantDetalles == 0 || strcmp(venta.getMetodoPag
 
             for (int i = 0; i < cantDetalles; i++) {
                 _detalleRepo.guardar(detalles[i]);   
+
                 int idProducto = detalles[i].getIdProducto();
                 int posProd = _productosRepo.buscarPorID(idProducto);
 
@@ -538,7 +538,7 @@ if (venta.getIdVendedor() == 0 || cantDetalles == 0 || strcmp(venta.getMetodoPag
 
                 int nuevoStock = prod.getStock() - detalles[i].getCantidad();
                 prod.setStock(nuevoStock);
-                
+
                 _productosRepo.modificarRegistro(posProd, prod);
             }
 
@@ -549,4 +549,43 @@ if (venta.getIdVendedor() == 0 || cantDetalles == 0 || strcmp(venta.getMetodoPag
          
 }
 
+void VentaManager::listarVentas(){
+    int cantVentas = _ventasRepo.contarRegistros();
 
+    if(cantVentas == 0) {
+        cout << "No hay ventas registradas." << endl;
+        return; 
+    }
+
+    cout << left
+         << setw(6)  << "ID"
+         << setw(12) << "FECHA"
+         << setw(10) << "CLIENTE"
+         << setw(10) << "VENDEDOR"
+         << setw(12) << "BRUTO"
+         << setw(12) << "DESC."
+         << setw(12) << "NETO"
+         << setw(15) << "PAGO"
+         << endl;
+
+    cout << string(89, '-') << endl;
+
+    for (int i = 0; i < cantVentas; i++) {
+        Venta v = _ventasRepo.leerRegistro(i);
+
+        Fecha f = v.getFecha();
+
+        cout << left
+             << setw(6)  << v.getIdVenta()
+             << setw(2)  << f.getDia() << "/"
+             << setw(2)  << f.getMes() << "/"
+             << setw(6)  << f.getAnio()
+             << setw(10) << v.getIdCliente()
+             << setw(10) << v.getIdVendedor()
+             << setw(12) << v.getTotalBruto()
+             << setw(12) << v.getDescuento()
+             << setw(12) << v.getTotalNeto()
+             << setw(15) << v.getMetodoPago()
+             << endl;
+    }
+}

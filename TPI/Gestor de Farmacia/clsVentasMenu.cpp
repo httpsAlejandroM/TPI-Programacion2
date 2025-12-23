@@ -22,9 +22,8 @@ void VentasMenu::mostrar(){
 void VentasMenu::mostrarOpciones(){
   cout << "--- MENU VENTAS ---" << endl;
   cout << "1- GESTIONAR NUEVA VENTA"<<endl;
-  cout << "2- ANULAR VENTA "<<endl;
-  cout << "3- LISTAR VENTAS POR RANGO DE FECHA "<<endl;
-  cout << "4- BUSCAR VENTA POR ID"<<endl;
+  cout << "2- LISTAR VENTAS POR RANGO DE FECHA "<<endl;
+  cout << "3- BUSCAR VENTA POR ID"<<endl;
   cout << "0- Atras "<<endl;
 }
 
@@ -51,15 +50,11 @@ void VentasMenu::ejecutarOpcion(int opcion){
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 2:
-    cout << "ANULAR VENTA" << endl;
-    // llama a cambioEstado de una Venta y devolver�a el stock
+    cout << "LISTAR VENTAS POR RANGO DE FECHA" << endl;
+    _ventaManager.listarVentas();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 3:
-    cout << "LISTAR VENTAS POR RANGO DE FECHA" << endl;
-    rlutil::anykey("Presione una tecla para volver al menu anterior...");
-    break;
-  case 4:
     cout << "BUSCAR VENTA POR ID" << endl;
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;

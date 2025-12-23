@@ -453,7 +453,7 @@
 1766261211 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsnuevaventamenu.h
 	"clsVentaManager.h"
 
-1766515824 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
+1766518048 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
 	"clsClientesArchivo.h"
 	"clsObrasSocialesArchivo.h"
 	"clsVentasArchivo.h"
@@ -495,7 +495,7 @@
 	"clsVenta.h"
 	<cstring>
 
-1766507707 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
+1766518352 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
 	"clsVentaManager.h"
 	<iostream>
 	<cstring>

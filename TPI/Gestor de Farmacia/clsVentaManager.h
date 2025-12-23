@@ -15,8 +15,7 @@ public:
     VentaManager();
 
     void nuevaVentaMenu();
-    // void anularVenta();
-    // void listarVentasPorRangoFecha();
+    void listarVentas();
     // void buscarVentaPorID();
 
 protected:

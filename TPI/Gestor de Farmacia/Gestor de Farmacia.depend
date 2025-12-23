@@ -1,16 +1,17 @@
 # depslib dependency file v1.0
-1764120880 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
+1766516708 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.cpp
 	<iostream>
 	"clsApp.h"
 	"rlutil.h"
 
-1764120880 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
+1766516708 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsapp.h
 	"clsProductosMenu.h"
 	"clsVendedoresMenu.h"
 	"clsClientesMenu.h"
 	"clsCategoriasMenu.h"
 	"clsObrasSocialesMenu.h"
 	"clsVentasMenu.h"
+	"clsReportesMenu.h"
 
 1761608797 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsmenuprincipal.cpp
 
@@ -514,5 +515,30 @@
 	"clsVendedoresManager.h"
 	<iostream>
 	<string>
+	"rlutil.h"
+
+1766516708 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsreportesmenu.h
+	"clsReportesManager.h"
+
+1766516708 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsreportesmanager.h
+	"clsVentasArchivo.h"
+	"clsDetalleVentaArchivo.h"
+	"clsProductosArchivo.h"
+	"clsVendedoresArchivo.h"
+	"clsVenta.h"
+	"clsDetalleVenta.h"
+	"clsProducto.h"
+	"clsVendedor.h"
+
+1766516708 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsreportesmanager.cpp
+	"clsReportesManager.h"
+	<iostream>
+	<iomanip>
+	<cstring>
+	"rlutil.h"
+
+1766516708 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsreportesmenu.cpp
+	"clsReportesMenu.h"
+	<iostream>
 	"rlutil.h"
 

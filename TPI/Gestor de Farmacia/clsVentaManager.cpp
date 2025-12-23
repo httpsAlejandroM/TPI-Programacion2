@@ -531,6 +531,15 @@ if (venta.getIdVendedor() == 0 || cantDetalles == 0 || strcmp(venta.getMetodoPag
 
             for (int i = 0; i < cantDetalles; i++) {
                 _detalleRepo.guardar(detalles[i]);   
+                int idProducto = detalles[i].getIdProducto();
+                int posProd = _productosRepo.buscarPorID(idProducto);
+
+                Producto prod = _productosRepo.leerRegistro(posProd);
+
+                int nuevoStock = prod.getStock() - detalles[i].getCantidad();
+                prod.setStock(nuevoStock);
+                
+                _productosRepo.modificarRegistro(posProd, prod);
             }
 
             delete[] detalles;

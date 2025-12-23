@@ -123,12 +123,13 @@ void Producto::mostrarEnFila(){
     string receta = _estado ? "Si" : "No";
 
      cout << left
+             << setw(6) << " "
              << setw(6)  << _idProducto
              << setw(25) << _nombre
              << setw(20) << _marca
              << setw(10) << _precio
              << setw(8)  << _stock
-             << setw(12) << _idCategoria
+             << setw(15) << _idCategoria
              << setw(10) << (_recetaObligatoria ? "SI" : "NO")
              << "\n";
 }

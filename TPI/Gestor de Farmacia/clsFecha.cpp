@@ -3,15 +3,10 @@ using namespace std;
 #include <iostream>
 #include <ctime>
 
-// Fecha::Fecha()
-//   : _dia(0), _mes(0), _anio(0)
-// {
-
-// }
-
-Fecha::Fecha() {
+Fecha::Fecha()
+  : _dia(0), _mes(0), _anio(0){
+  
     time_t t = time(nullptr);
-
     tm ahora = *localtime(&t);
 
     _dia  = ahora.tm_mday;

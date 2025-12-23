@@ -7,6 +7,7 @@
 #include "clsDetalleVenta.h"
 #include "clsProductosArchivo.h"
 #include "clsVendedoresArchivo.h"
+#include "clsCategoriasArchivo.h"
 
 class VentaManager {
 
@@ -14,15 +15,15 @@ public:
     VentaManager();
 
     void nuevaVentaMenu();
-    // void anularVenta();
-    // void listarVentasPorRangoFecha();
+    void listarVentas();
     // void buscarVentaPorID();
 
 protected:
-    int cargarVendedor();
-    int cargarCliente(int &idObraSocial);
-    // int cargarMetodoPago();
-    void agregarProductos(DetalleVenta* &detalles, int &cantidad, float &totalBruto);
+    int cargarVendedor(Vendedor &vendedor);
+    int cargarCliente(Cliente &cliente, Venta &venta);
+    void agregarProductos(Venta &venta, DetalleVenta* &detalle, int &cantDetalles);
+    void seleccionarMetodoPago(Venta &venta);
+    int guardarVenta(Venta &venta, DetalleVenta* &detalles, int &cantDetalles);
 
     // void mostrarVenta(Venta venta);
     // void mostrarDetalleVenta(DetalleVenta detalle);
@@ -34,7 +35,10 @@ private:
     ClientesArchivo _clientesRepo;
     ObrasSocialesArchivo _obrasSocialesRepo;
     ProductosArchivo _productosRepo;
-    void buscarProductoPorNombre(DetalleVenta* &detalles, int &cantidad, float &totalBruto);
-    // void listarProductosDisponibles();
-    // void ingresarProductoPorID(DetalleVenta* &detalles, int &cantidad, float &totalBruto);
+    CategoriasArchivo _categoriaRepo;
+
+    void buscarProductoPorNombre(Venta &venta, DetalleVenta* &detalle, int &cantDetalles);
+    void listarProductosDisponibles(Venta &venta, DetalleVenta* &detalle, int &cantDetalles);
+    void ingresarProductoPorID(Venta &venta, DetalleVenta* &detalles, int &cantidad);
+    void listarProductosCarrito(DetalleVenta* &detalles, int cantDetalles);
 };

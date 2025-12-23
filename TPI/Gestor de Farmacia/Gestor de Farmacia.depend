@@ -215,7 +215,7 @@
 	"clsFecha.h"
 	"clsPersona.h"
 
-1766348499 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.cpp
+1766518391 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasmenu.cpp
 	<iostream>
 	"clsVentasMenu.h"
 	"rlutil.h"
@@ -453,7 +453,7 @@
 1766261211 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsnuevaventamenu.h
 	"clsVentaManager.h"
 
-1766518048 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
+1766518765 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
 	"clsClientesArchivo.h"
 	"clsObrasSocialesArchivo.h"
 	"clsVentasArchivo.h"
@@ -495,7 +495,7 @@
 	"clsVenta.h"
 	<cstring>
 
-1766518352 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
+1766519187 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
 	"clsVentaManager.h"
 	<iostream>
 	<cstring>

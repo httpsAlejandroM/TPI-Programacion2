@@ -10,7 +10,7 @@ Venta::Venta() {
     _descuento = 0.0f;
     _totalNeto = 0.0f;
     strcpy(_metodoPago, "-"); 
-    _estado = false;
+    _estado = true;
 }
 
 Venta::Venta(int idVenta, Fecha fecha, int idCliente, int idVendedor,

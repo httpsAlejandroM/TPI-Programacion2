@@ -6,7 +6,7 @@ DetalleVenta::DetalleVenta()
   _idProducto(0),
   _cantidad(0),
   _precioUnitario(0.0f),
-  _estado(false)
+  _estado(true)
 {
 }
 

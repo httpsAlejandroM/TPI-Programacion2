@@ -165,7 +165,7 @@
 	"clsClientesMenu.h"
 	"rlutil.h"
 
-1766262937 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.cpp
+1766509292 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsfecha.cpp
 	"clsFecha.h"
 	<iostream>
 	<ctime>
@@ -178,7 +178,7 @@
 	"clsObrasSocialesMenu.h"
 	"rlutil.h"
 
-1766354710 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
+1766507806 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsproducto.cpp
 	<cstring>
 	"clsProducto.h"
 	<iostream>
@@ -384,7 +384,7 @@
 	<cstring>
 	<iostream>
 
-1766348298 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.cpp
+1766445098 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\utils.cpp
 	<iostream>
 	"utils.h"
 	<cctype>
@@ -452,7 +452,7 @@
 1766261211 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsnuevaventamenu.h
 	"clsVentaManager.h"
 
-1766348561 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
+1766515824 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.h
 	"clsClientesArchivo.h"
 	"clsObrasSocialesArchivo.h"
 	"clsVentasArchivo.h"
@@ -461,11 +461,12 @@
 	"clsDetalleVenta.h"
 	"clsProductosArchivo.h"
 	"clsVendedoresArchivo.h"
+	"clsCategoriasArchivo.h"
 
 1765491299 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventasarchivo.h
 	"clsVenta.h"
 
-1765319780 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.h
+1766510520 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.h
 	"clsFecha.h"
 
 1765922759 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventaarchivo.h
@@ -476,7 +477,7 @@
 1766359791 c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsvendedoresarchivo.h
 	"clsVendedor.h"
 
-1765923006 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventa.cpp
+1766441421 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventa.cpp
 	"clsDetalleVenta.h"
 
 1765922806 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsdetalleventaarchivo.cpp
@@ -489,11 +490,11 @@
 	<cstring>
 	<iostream>
 
-1765320802 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.cpp
+1766512351 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventa.cpp
 	"clsVenta.h"
 	<cstring>
 
-1766354716 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
+1766507707 source:c:\users\ale\desktop\tpi\tpi\gestor de farmacia\clsventamanager.cpp
 	"clsVentaManager.h"
 	<iostream>
 	<cstring>

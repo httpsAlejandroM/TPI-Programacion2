@@ -16,7 +16,7 @@ public:
 
     void nuevaVentaMenu();
     void listarVentas();
-    // void buscarVentaPorID();
+    void buscarVentaPorID();
 
 protected:
     int cargarVendedor(Vendedor &vendedor);

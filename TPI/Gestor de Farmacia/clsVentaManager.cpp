@@ -589,3 +589,48 @@ void VentaManager::listarVentas(){
              << endl;
     }
 }
+
+void VentaManager::buscarVentaPorID(){
+    int idVenta, posVenta;
+    int cantVentas = _ventasRepo.contarRegistros();
+    Venta v;
+    cout << "Ingrese el Id de la vente que desea buscar: ";
+    cin >> idVenta;
+    cout << endl;
+
+    posVenta = _ventasRepo.buscarPorID(idVenta);
+    
+    if(posVenta < 0) {
+        cout << "Venta con Id " << "'" << idVenta << "'" << " no encontrada." << endl;
+    }
+
+    v = _ventasRepo.leerRegistro(posVenta);
+
+    cout << left
+         << setw(6)  << "ID"
+         << setw(12) << "FECHA"
+         << setw(10) << "CLIENTE"
+         << setw(10) << "VENDEDOR"
+         << setw(12) << "BRUTO"
+         << setw(12) << "DESC."
+         << setw(12) << "NETO"
+         << setw(15) << "PAGO"
+         << endl;
+
+    cout << string(89, '-') << endl;
+
+        Fecha f = v.getFecha();
+
+        cout << left
+             << setw(6)  << v.getIdVenta()
+             << setw(2)  << f.getDia() << "/"
+             << setw(2)  << f.getMes() << "/"
+             << setw(6)  << f.getAnio()
+             << setw(10) << v.getIdCliente()
+             << setw(10) << v.getIdVendedor()
+             << setw(12) << v.getTotalBruto()
+             << setw(12) << v.getDescuento()
+             << setw(12) << v.getTotalNeto()
+             << setw(15) << v.getMetodoPago()
+             << endl;
+}

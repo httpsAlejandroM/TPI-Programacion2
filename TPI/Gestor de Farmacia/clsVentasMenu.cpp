@@ -56,6 +56,7 @@ void VentasMenu::ejecutarOpcion(int opcion){
     break;
   case 3:
     cout << "BUSCAR VENTA POR ID" << endl;
+    _ventaManager.buscarVentaPorID();
     rlutil::anykey("Presione una tecla para volver al menu anterior...");
     break;
   case 0:

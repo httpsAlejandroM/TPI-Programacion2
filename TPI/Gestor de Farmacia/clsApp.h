@@ -5,7 +5,7 @@
 #include "clsCategoriasMenu.h"
 #include "clsObrasSocialesMenu.h"
 #include "clsVentasMenu.h"
-
+#include "clsReportesMenu.h"
 
 class App
 {
@@ -26,6 +26,7 @@ class App
     CategoriasMenu _categoriaMenu;
     ObrasSocialesMenu _obraSocialMenu;
     VentasMenu _ventaMenu;
+    ReportesMenu _reportesMenu;
 
     private:
     int _cantidadOpciones;

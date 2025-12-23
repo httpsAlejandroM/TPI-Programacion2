@@ -75,6 +75,10 @@
 		<Unit filename="clsProductosArchivo.h" />
 		<Unit filename="clsProductosMenu.cpp" />
 		<Unit filename="clsProductosMenu.h" />
+		<Unit filename="clsReportesManager.cpp" />
+		<Unit filename="clsReportesManager.h" />
+		<Unit filename="clsReportesMenu.cpp" />
+		<Unit filename="clsReportesMenu.h" />
 		<Unit filename="clsVendedor.cpp" />
 		<Unit filename="clsVendedor.h" />
 		<Unit filename="clsVendedoresMenu.cpp" />
